@@ -37,7 +37,7 @@
 }
 .button-wrapper button {
     border: 3px solid;
-    border-image: linear-gradient(red, var(--awesome)) 13 fill;
+    border-image: linear-gradient( red, var(--awesome)) 11 fill;
 }
 .image-animation {
     background: linear-gradient(to right, green, yellow);
