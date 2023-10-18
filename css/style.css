@@ -22,9 +22,15 @@
     border-image: radial-gradient(120deg, var(--numbOfRed), var(--numbOfOrange), var(--numbOfYellow));
 }
 /* Display flex */
-.container #example1, .button-wrapper {
+.container :is(#example1, #example2), 
+.button-wrapper {
     display: flex;
     gap: .6rem;
+}
+/* wrap: when there is no enough space place it to the 
+next line. Or Wrapping a gift in a box prevents it from coming out. */
+.container :is(#example2) {
+    flex-flow: row wrap;
 }
 .item {
     display: grid;
