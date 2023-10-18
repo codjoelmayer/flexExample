@@ -12,6 +12,9 @@
 }
 /* Container */
 .container {
+    /* Local custom variable */
+    /* top and bottom */
+    margin-block: 20px;
     --numbOfRed: 123;
     --numbOfOrange: 100;
     --numbOfYellow: 18;
@@ -62,8 +65,7 @@ img[alt="Image"]{
        transform: translateX(0px);
     }
     to{
-       transform: translateX(90vw) scale(1, 1) rotateX(123deg);
-
+       transform: translateX(calc(100vw - 100px)) scale(1, 1) rotateX(123deg);
     }
 }
 
